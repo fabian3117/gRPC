@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package model;
+
+option java_package = "com.probando.services.grpc.customer.model";
+option java_outer_classname = "ejemplo";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
+service Hola{
+  rpc Saludo(google.protobuf.Empty)  returns ( Mensaje) {};
+}
+message Mensaje{
+  string texto=2;
+}
