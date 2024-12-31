@@ -5,9 +5,11 @@ import com.probando.services.grpc.customer.model.HolaGrpc;
 import com.probando.services.grpc.customer.model.ejemplo;
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.client.inject.GrpcClient;
+import net.devh.boot.grpc.server.interceptor.GrpcGlobalServerInterceptor;
 import net.devh.boot.grpc.server.service.GrpcService;
 
 @GrpcService
+
 public class probando extends HolaGrpc.HolaImplBase {
 //    @GrpcClient
 
